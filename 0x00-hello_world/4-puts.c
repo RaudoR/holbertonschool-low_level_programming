@@ -2,7 +2,7 @@
 /**
  * main-entry to program
  * return:0
- * Return: of value main
+ * Return: 0
  *
  */
 int main(void)

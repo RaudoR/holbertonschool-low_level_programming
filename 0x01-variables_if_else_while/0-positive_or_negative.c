@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - print positive, negative, and zero depending on the number
- * Description: this program prints "positive, negative, and zero"
+ * Description: this will program prints "positive, negative, and zero"
  * Return: 0
  */
 int main(void)

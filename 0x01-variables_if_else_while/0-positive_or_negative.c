@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - print positive, negative, and zero depending o the number
+ * main - print positive, negative, and zero depending on the number
  * Description: this program prints "positive, negative, and zero"
  * Return: 0
  */

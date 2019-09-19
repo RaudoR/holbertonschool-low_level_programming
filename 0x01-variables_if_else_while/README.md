@@ -1,0 +1,1 @@
+"this is the readme page for all projects under variables"

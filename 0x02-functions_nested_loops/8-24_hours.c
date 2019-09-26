@@ -1,4 +1,9 @@
 #include "holberton.h"
+/**
+ * jack_bauer - main func
+ * n counts
+ * Return: 0
+ */
 void jack_bauer(void)
 {
 	int hours = 0;

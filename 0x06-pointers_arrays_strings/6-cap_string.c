@@ -25,7 +25,8 @@ char *cap_string(char *s)
 			}
 			if (s[counter] == thing[b])
 			{
-				if (s[counter + 1] >= 'a' && s[counter + 1] <= 'z')
+				if (s[counter + 1] >= 'a' && s[counter + 1] <=
+				    'z')
 				{
 					s[counter + 1] = s[counter + 1] - 32;
 				}

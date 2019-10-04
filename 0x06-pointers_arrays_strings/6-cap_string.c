@@ -16,12 +16,9 @@ char *cap_string(char *s)
 	{
 		for (b = 0; thing[b] != '\0'; b++)
 		{
-			if (s[counter] == 0)
+			if (s[0] >= 'a' && s[0] <= 'z')
 			{
-				if (s[counter] >= 'a' && s[counter] <= 'z')
-				{
-					s[counter] = s[counter] - 32;
-				}
+				s[0] = s[0] - 32;
 			}
 			if (s[counter] == thing[b])
 			{

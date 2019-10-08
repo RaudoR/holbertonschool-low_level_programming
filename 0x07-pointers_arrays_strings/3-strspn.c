@@ -15,7 +15,7 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		for (pizza = 0; accept[pizza]; pizza++)
 		{
-			if (accept [pizza] == s[cheese])
+			if (accept[pizza] == s[cheese])
 				break;
 		}
 		if (!accept[pizza])

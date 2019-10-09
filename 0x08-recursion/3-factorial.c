@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * factorial - main function
- * @n: int parameter
+ * @n: parameter
  * Return: -1, 1, or factorial
  */
 int factorial(int n)

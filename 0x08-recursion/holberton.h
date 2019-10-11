@@ -12,5 +12,6 @@ int is_prime_number(int n);
 int is_palindrome(char *s);
 int square(int n, int c);
 int some_pizza(int a, int k);
+int something(char *a, int tank);
 
 #endif

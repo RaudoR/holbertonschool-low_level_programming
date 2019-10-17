@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * free_grid - main function
+ * free_grid - function
  * @grid: point
  * @height: int
  * Return: 0

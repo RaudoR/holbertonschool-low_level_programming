@@ -30,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (bytes >= len2)
 	{
-		bytes = len2;
+		bytes = *s2;
 		ptr = malloc(sizeof(char) * (len1 + len2 + 1));
 	}
 	if (bytes < len2)

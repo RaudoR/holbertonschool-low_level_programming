@@ -15,8 +15,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	unsigned int count1 = 0;
 	unsigned int count2 = 0;
-	unsigned int len1 = _strlen(s1);
-	unsigned int len2 = _strlen(s2);
+	unsigned int len1;
+	unsigned int len2;
 	char *ptr;
 	unsigned int bytes = n;
 
@@ -24,6 +24,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+
+	for (len1 = 0; s1[len1] != '\0'; len1++)
+		;
+	for (len2 = 0; s2[len2] != '\0'; len2++)
+		;
 
 	if (bytes >= len2)
 	{
@@ -44,20 +49,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	ptr[count1++] = '\0';
 	return (ptr);
-}
-
-
-#include "holberton.h"
-/**
- * _strlen - main function
- * @s: integer
- * Return: n
- */
-unsigned int _strlen(char *s)
-{
-	unsigned int n;
-
-	for (n = 0; *s != '\0'; s++)
-		n++;
-	return (n);
 }

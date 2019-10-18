@@ -21,33 +21,26 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int bytes = n;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
+
 	if (bytes >= len2)
 	{
-		bytes = *s2;
+		bytes = len2;
 		ptr = malloc(sizeof(char) * (len1 + len2 + 1));
 	}
-	if (bytes < len2)
-	{
+	else
 		ptr = malloc(sizeof(char) * (len1 + n + 1));
-	}
 	if (ptr == NULL)
-	{
 		return (NULL);
-	}
 	for (; count1 < len1; count1++)
 	{
 		ptr[count1] = s1[count1];
 	}
-	for (; count2 < bytes; count2++)
+	for (; count2 < bytes; count2++, count1++)
 	{
-		ptr[count1++] = s2[count2];
+		ptr[count1] = s2[count2];
 	}
 	ptr[count1++] = '\0';
 	return (ptr);

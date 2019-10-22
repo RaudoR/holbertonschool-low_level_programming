@@ -1,10 +1,10 @@
+#include "holberton.h"
 #include <stdio.h>
-int main(void)
 /**
- * main - main program
- * Description: print the filename
+ * main - Prints name of file
  * Return: 0
  */
+int main(void)
 
 {
 	printf("%s\n", __FILE__);

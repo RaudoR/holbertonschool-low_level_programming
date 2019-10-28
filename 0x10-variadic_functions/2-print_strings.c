@@ -23,6 +23,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (separator != NULL && (alpha < (n - 1)))
 			printf("%s", separator);
 	}
+	if (separator == NULL)
+	{
+		printf("(nil)");
+	}
 	va_end(lst);
 	printf("\n");
 }

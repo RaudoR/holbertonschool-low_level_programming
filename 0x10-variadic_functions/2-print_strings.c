@@ -30,7 +30,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("(nil)");
 		}
 		if (separator != NULL && (alpha < (n - 1)))
-                        printf("%s", separator);
+			printf("%s", separator);
 	}
 	va_end(lst);
 	printf("\n");

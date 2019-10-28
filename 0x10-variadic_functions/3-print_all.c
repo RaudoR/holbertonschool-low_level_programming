@@ -2,13 +2,12 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 
-void print_all(const char * const format, ...)
 /**
  * print_all - main function
  * @format: string
  * Return: void
  */
-
+void print_all(const char * const format, ...)
 {
 
 	va_list lst;

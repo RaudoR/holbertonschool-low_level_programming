@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * *argstostr - convert arguments on command line to strings
+ * argstostr - convert arguments on command line to strings
  * @ac: int type
  * @av: pointer to array
  * Return: arguments as strings
@@ -11,9 +11,7 @@ char *argstostr(int ac, char **av)
   char *ptr;
 
   if (ac == 0 || av == NULL)
-    {
-      return (NULL);
-    }
+    return (NULL);
 
   for (count = 0; count < ac; count++)
     {
@@ -44,3 +42,4 @@ char *argstostr(int ac, char **av)
   ptr[count2] = '\0';
   return (ptr);
 }
+
